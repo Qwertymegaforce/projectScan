@@ -1,0 +1,449 @@
+/* Main page styles */
+
+.account_grid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C B";
+    grid-template-columns: 8fr 7fr;
+    padding-left: 60px;
+    position: relative;
+}
+
+.need_authorize_sign_div{
+    grid-area: A;
+}
+
+.need_authorize_sign_div h1{
+    font-family: "Ferry";
+    font-size: 2.5rem;
+}
+
+.account_form_div{
+    padding: 20px;
+    height: 90%;
+    width: 60%;
+    margin: 0px auto;
+    grid-area: B;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.159);
+}
+
+.keycharacters_div{
+    grid-area: C;
+    padding-left: 170px;
+}
+
+.account_form_button_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.account_form_button_div{
+    display: flex;
+    gap: 0.9rem
+}
+
+
+.account_form_button_div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    border: none;
+    border-bottom: solid 2px rgb(199, 199, 199);
+    color:rgb(199, 199, 199);
+    
+    font-size: 0.8rem;
+}
+
+
+.account_form_button_div a:nth-of-type(1){
+    flex: 3.5;
+}
+
+
+.account_form_button_div a:nth-of-type(2){
+    flex: 5;
+}
+
+/* Login form styles */
+
+.login_form_div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 0.6rem;
+}
+
+
+.login_form_div label {
+    
+    color: rgb(148, 148, 148);
+    font-size: 0.8rem;
+}
+
+
+.login_disabled_button, .login_active_button{
+    padding: 15px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.login_active_button{
+    background-color: rgb(89, 112, 255);
+}
+
+
+.login_disabled_button{
+    background-color: rgb(172, 184, 255);
+    pointer-events: none;
+}
+
+
+.login_form_div a{
+    color: rgb(89, 112, 255);
+    display: flex;
+    justify-content: center;
+    
+    font-size: 0.8rem;
+}
+
+.login_form_div input {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    border: 1px solid rgb(199, 199, 199);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login_form_div input:valid{
+    background-color: white;
+}
+
+
+.login_form_div input:focus{
+    outline: none;
+}
+
+
+.login_form_div .error_data_input{
+    border: 2px solid rgb(255, 89, 89);
+    box-shadow: 0px 0px 10px rgba(255, 89, 89, 0.07);
+}
+
+.error_data_input{
+    color: rgb(255, 89, 89);
+}
+
+.error_msg_hidden{
+    display: none;
+}
+
+
+.error_msg{
+    
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 89, 89);
+}
+
+/* Continue with div styles */
+
+.continue_with_div{
+    
+    color: rgb(148, 148, 148);
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+.continue_with_logos_div{
+    margin-top: 10px;
+}
+
+
+/* Locker logo */
+
+.locker_logo {
+    position: absolute;
+    right: 33%;
+    top: -7%;
+}
+
+
+/* Media */
+
+
+@media screen and (max-width: 1410px) {
+    .need_authorize_sign_div h1{
+        font-family: "Ferry";
+        font-size: 2rem;
+    }
+
+    .keycharacters_div{
+        padding-left: 100px;
+    }
+
+    .key_characters{
+        width: 300px;
+        height: 300px;
+    }
+
+    .account_form_div{
+        height: 100%;
+        width: 67%;
+    }
+
+    .locker_logo {
+        right: 34%;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+
+    .need_authorize_sign_div h1{
+        font-size: 1.8rem;
+    }
+
+    .key_characters{
+        width: 250px;
+        height: 250px;
+    }
+
+    .account_grid{
+        grid-template-columns: 7fr 8fr;
+    }
+
+    .locker_logo {
+        right: 38%;
+    }
+
+}
+
+
+@media screen and (max-width: 980px){
+    .continue_with_logo{
+        width: 20px;
+        height: 20px;
+        margin: 0px 20px;
+    }
+
+    .need_authorize_sign_div h1{
+        font-size: 1.7rem;
+    }
+
+    .locker_logo {
+        right: 36%;
+    }
+
+}
+
+
+@media screen and (max-width: 870px){
+
+    .need_authorize_sign_div h1{
+        font-size: 1.6rem;
+    }
+
+    .keycharacters_div{
+        padding-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .account_form_div{
+        height: 90%;
+        width: 70%;
+    }
+
+    .locker_logo {
+        right: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .account_grid{
+        grid-template-columns: 2fr 8fr;
+    }
+
+    .need_authorize_sign_div h1{
+        font-size: 1.5rem;
+    }
+
+    .keycharacters_div{
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .locker_logo {
+        right: 37%;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .account_form_div{
+        width: 90%;
+        margin: 0px 0px;
+        height: 90%;
+    }
+
+    .locker_logo {
+        right: 40%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .locker_logo {
+        right: 37%;
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    .locker_logo {
+        right: 33%;
+    }
+}
+
+
+@media screen and (max-width: 610px) {
+    .account_grid{
+        grid-template-areas: 
+        "A"
+        "B"
+        "C";
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding-left: 60px;
+        
+    }
+
+    .need_authorize_sign_div h1{
+        width: 80%;
+        font-size: 1.3rem;
+        padding-bottom: 50px;
+    }
+
+    .account_form_div{
+        height: 100%;
+        width: 80%;
+        min-height: 400px;
+    }
+
+    .keycharacters_div{
+        padding-left: 70px;
+        padding-top: 0px;
+    }
+
+    .key_characters{
+        width: 400px;
+        height: 400px;
+    }
+
+    .locker_logo{
+        top: 10.5%;
+        left: 35%;
+    }
+    
+}
+
+
+@media screen and (max-width: 545px) {
+    .keycharacters_div{
+        padding-left: 0px;
+    }
+
+    .account_grid{
+        padding-left: 30px;
+    }
+
+    .account_form_div{
+        width: 90%;
+    }
+
+    .need_authorize_sign_div h1{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 527px){
+    .locker_logo{
+        top: 10%;
+        left: 36%;
+    }
+}
+
+
+@media screen and (max-width: 465px) {
+    .key_characters{
+        width: 350px;
+        height: 350px;
+    }
+
+    .locker_logo{
+        top: 13%;
+        left: 37%;
+    }
+
+    .keycharacters_div{
+        padding-left: 60px;
+    }
+
+    .account_form_div{
+        height: 100%;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .account_grid{
+        padding-left: 0px;
+    }
+
+    .need_authorize_sign_div h1{
+        display: block;
+        margin: 0px auto;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .key_characters{
+        width: 320px;
+        height: 320px;
+    }
+
+    .account_grid{
+        padding-left: 10px;
+    }
+
+    .locker_logo{
+        top: 13.5%;
+        left: 36%;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .key_characters{
+        width: 300px;
+        height: 300px;
+    }
+}

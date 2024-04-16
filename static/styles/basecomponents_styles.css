@@ -1,0 +1,388 @@
+/* Footer styles */
+
+footer {
+    
+    font-size: 0.7rem;
+    background-color: rgb(2, 148, 145);
+    font-weight: lighter;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_footer {
+    width: 90px;
+    height: 90px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div:nth-of-type(1){
+    padding-left: 60px;
+}
+
+footer div:nth-of-type(2){
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.copyright_sign_footer {
+    font-size: 0.6rem;
+}
+
+
+/* Header styles */
+
+header{
+    
+    font-size: 0.7rem;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 11;
+    
+}
+
+main, footer{
+    transition: opacity 0.3s;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo_div {
+    padding-left: 60px;
+    position: relative;
+}
+
+.logo_header {
+    width: 90px;
+    height: 90px;
+    transition: opacity 0.2s ease-out;
+}
+
+.logo_header.white_logo_header{
+    position: absolute;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation_buttons_header_div{
+    gap: 3rem;
+}
+
+
+.account_buttons_header_div{
+    transition: opacity 0.6s ease-out;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_button_header {
+    color: rgb(153, 153, 153);
+    background-color: transparent;
+    border: none;
+    
+    font-size: 0.8rem;
+}
+
+.login_button_header{
+    background-color: rgb(124, 227, 225);
+    border: none;
+    padding: 4px 5px;
+    border-radius: 5px;
+    
+    font-size: 0.8rem;
+}
+
+
+.register_button_wrapper_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register_button_wrapper_link::after{
+    content: " ";
+    display: inline-block;
+    width: 2px;
+    background-color: rgb(103, 191, 189);
+    height: 25px;
+    margin: 4px 16px 5px 10px;
+}
+
+
+/* Submenu styles */
+
+.submenu_green_bg{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    transition: opacity 0.4s ease-out, width 0.2s ease-out;
+    z-index: 10;
+    background-color: rgb(2, 148, 145);
+}
+
+.submenu_button_div{
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.submenu_content_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 100px;
+    transition: opacity 0.3s ease-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.links_div{
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.links_div a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.submenu_buttons_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+}
+
+.submenu_register_button{
+    background-color: transparent;
+    border: none;
+    color: rgb(103, 191, 189);
+    font-size: 1.2rem;
+}
+
+.submenu_login_button_link{
+    width: 100%;
+
+}
+
+
+.submenu_login_button{
+    font-size: 1.4rem;
+    width: 100%;
+    background-color: rgb(124, 227, 225);
+    border: none;
+    border-radius: 5px;
+    font-family: "InterMedium";
+    padding: 15px 0px;
+}
+
+.hide_cross, .top_cross, .bottom_cross{
+    transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+}
+
+/* Account Data Settings */
+
+
+.accountdata_component_div{
+    padding-right: 30px;
+    transition: opacity 0.3s ease-out;
+}
+
+.profile_div{
+    display: flex;
+    gap: 0.3rem;
+}
+
+
+.profile_name_logout_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile_name_logout_div button{
+    background-color: transparent;
+    border: none;
+    color: rgb(153, 153, 153);
+    
+    font-size: 0.6rem;
+    ;
+}
+
+
+.company_limit_div{
+    position: absolute;
+    top: 15%;
+    right: 18%;
+    color: rgb(146, 146, 146);
+    font-size: 0.6rem;
+}
+
+.company_limit_info_div{
+    background-color: rgb(244, 244, 244);
+    padding: 10px 15px;
+    border-radius: 5px;
+    min-width: 150px;
+    min-height: 61px;
+    display: flex;
+    flex-direction: column;
+}
+
+.companies_div{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+
+.loader{
+    animation: spin 1s linear infinite;
+}
+
+
+.used_companies_sign{
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "InterBold";
+}
+
+.left_companies_sign{
+    color: rgb(138, 197, 64);
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "InterBold";
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 1030px){
+    .company_limit_div{
+        position: static;
+    }
+
+    .accountdata_component_div{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .profile_div{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .navigation_buttons_header_div{
+        margin-left: 30px;
+        gap: 1.5rem;
+    }
+
+    .login_button_header, .register_button_header {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media screen and (max-width: 585px){
+    .navigation_buttons_header_div{
+        gap: 1rem;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 545px){
+    .navigation_buttons_header_div, .account_buttons_header_div{
+        display: none;
+    }
+
+    .header_logo_div{
+        padding-left: 25px;
+    }
+
+
+    header{
+        position: static;
+    }
+
+
+    footer div:nth-of-type(1){
+        padding-left: 25px;
+    }
+    
+    footer div:nth-of-type(2){
+        padding-right: 20px;
+    }
+
+    .accountdata_component_div{
+        padding: 0px;
+    }
+
+    .submenu_button_div{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+
+    footer div:nth-of-type(1){
+        padding-bottom: 30px;
+    }
+
+    .company_limit_info_div{
+        padding: 5px 10px;
+        min-width: 0px;
+        padding-right: 15px;
+    }
+
+    .company_limit_div{
+        margin-left: 0px;
+    }
+
+    .companies_div{
+        flex-direction: column;
+        gap: 0rem;       
+        min-height: 0px;
+        align-items: flex-start;
+    }
+
+}
+
+

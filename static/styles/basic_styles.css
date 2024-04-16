@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html, body, #root{
+    height: 100%;
+    font-family: "Inter";
+    scroll-behavior: smooth;
+}
+
+
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+main{
+    flex-grow: 1;
+}
+
+
+@font-face {
+    font-family: "Ferry";
+    src: url(/fonts/ferry_black.otf);
+}
+
+@font-face {
+    font-family: "InterBold";
+    src: url(/fonts/Inter-Bold.otf);
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter-Regular.otf);
+}
+
+
+@font-face {
+    font-family: "InterMedium";
+    src: url(/fonts/Inter-Medium.otf);
+}
+
+@font-face {
+    font-family: "InterLight";
+    src: url(/fonts/Inter-Light.otf);
+}
+
+
+svg{
+    overflow: visible;
+}
+
+.hide_all{
+    display: none;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+

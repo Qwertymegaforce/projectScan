@@ -1,0 +1,677 @@
+.search_component_div{
+    display: grid;
+    grid-template-areas: 
+    "A A C"
+    "B B C"
+    "B B C"
+    "B B C";
+    min-height: 100%;
+    row-gap: 2rem;
+    
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0px 30px 30px 60px;
+    position: relative;
+}
+
+
+.search_header_component_div{
+    grid-area: A;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.searchform_component_div{
+    grid-area: B;
+}
+
+.searchdecoration_component_div{
+    grid-area: C;
+}
+
+.search_needed_data_sign {
+    font-family: 'Ferry';
+    font-size: 2rem;
+    width: 60%;
+}
+
+
+.searchform_div{
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.searchdecoration_component_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.files_logo_div{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.files_logo_div img{
+    height: 100px;
+    width: 100px;
+}
+
+.searchman_logo_div img{
+    height: 350px;
+    width: 350px;
+}
+
+.searchform_inputs_div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 30px 0px 0px 40px;
+}
+
+.searchform_inputs_div input{
+    padding: 10px 10px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    width: 60%;
+    outline: none;
+    
+}
+
+.searchform_inputs_div input:valid{
+    background-color: white;
+}
+
+.tonality_div{
+    width: 60%;
+    position: relative;
+    cursor: pointer;
+}
+
+.tonality_div input{
+    width: 100%;
+    cursor: pointer;
+}
+
+.tonality_dropdown_div{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.tonality_dropdown_div p{
+    display: inline-block;
+    padding: 5px 10px;
+    transition: background-color 0.2s;
+}
+
+.tonality_dropdown_div p:nth-of-type(1){
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.tonality_dropdown_div p:hover{
+    cursor: pointer;
+    background-color: rgb(163, 226, 255);
+}
+
+
+.tonality_dropdown_div p:nth-of-type(3){
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+.tonality_div img, .startdate_input_div img, .enddate_input_div img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.startdate_input_div img, .enddate_input_div img{
+    right: 14%;
+    top: 30%;
+}
+
+.searchform_inputs_div input::placeholder {
+    text-align: center;
+    color: rgb(212, 212, 212);
+}
+
+.searchform_inputs_div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.searchform_inputs_div div label{
+    margin-bottom: 15px;
+}
+
+.searchform_inputs_div div p {
+    min-height: 20px;
+}
+
+.date_input_div div {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+}
+
+.searchform_inputs_div, .checkboxesform_div{
+    flex: 1;
+}
+
+
+.error_input_search{
+    width: 60%;
+    color: rgb(255, 89, 89);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.checkbox_component_div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkboxesform_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 10px 10px 10px;
+}
+
+.checkboxes_div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.checkbox_div{
+    min-width: 1rem;
+    min-height: 1rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search_tick_svg{
+    margin-left: 1px;
+    width: 12px;
+    height: 12px;
+}
+
+.search_button_div{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0px 30px 10px 0px;
+}
+
+
+.search_button_div button{
+    color: white;
+    background-color: rgb(89, 112, 255);
+    border: none;
+    padding: 12px 25%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+
+.search_button_div p{
+    color: rgb(148, 148, 148);
+    font-size: 0.6rem;
+    align-self: center;
+    margin-left: 50px;
+}
+
+
+.date_input_div .startdate_input_div , .date_input_div .enddate_input_div{
+    display: block;
+    position: relative;
+    
+}
+
+
+.date_input_div input{
+    width: 90%;
+
+}
+
+
+.hiden_date_input{
+    position: absolute;
+    left: 0%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.hiden_date_input::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+
+
+.searchform_inputs_div .error_data_input_search{
+    color: rgb(255, 89, 89);
+    border: 2px solid rgb(255, 89, 89);
+    box-shadow: 0px 0px 5px rgba(255, 89, 89, 0.29);
+}
+
+.searchform_inputs_div .error_data_input_search::placeholder{
+    color: rgb(255, 89, 89);
+}
+
+
+body .search_button_div .search_disabled_button{
+    background-color: rgb(172, 184, 255);
+    pointer-events: none;
+}
+
+.error_data_ast_search{
+    color: rgb(255, 89, 89);
+}
+
+.date_input_div .error_input_search{
+    width: 100%;
+
+}
+
+
+.search_document_absolute_img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10%;
+    right: 35%;
+}
+
+
+@media screen and (max-width: 1306px){
+    .searchman_logo_div img{
+        height: 350px;
+        width: 350px;
+    }
+
+    .search_header_component_div .search_needed_data_sign{
+        font-size: 1.8rem;
+    }
+
+    .search_button_div{
+        padding-bottom: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 1185px){
+    .search_header_component_div .search_needed_data_sign{
+        font-size: 1.5rem;
+    }
+
+    .checkboxesform_div p, .searchform_inputs_div label{
+        font-size: 0.8rem;
+    }
+
+    .searchform_inputs_div .error_input_search{
+        font-size: 0.6rem;
+    }
+
+    .search_button_div .field_require_sign{
+        font-size: 0.6rem;
+        margin-left: 50px;
+    }
+
+    .searchform_div{
+        width: 100%;
+    }
+
+    .search_component_div{
+        column-gap: 1rem;
+    }
+
+    .searchform_inputs_div div label{
+        margin-bottom: 10px;
+    }
+
+    .search_button_div button{
+        font-size: 1rem;
+    }
+
+    .search_document_absolute_img{
+        right: 30%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1130px){
+    .searchform_inputs_div input::placeholder {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 1065px){
+    .searchman_logo_div img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 1015px){
+    .search_needed_data_sign{
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width: 950px){
+    .search_component_div{
+        padding-right: 0px;
+    }
+
+    .search_button_div .field_require_sign{
+        font-size: 0.5rem;
+        margin-left: 20px;
+    }
+
+    .startdate_input_div img, .enddate_input_div img, .tonality_div img{
+        width: 10px;
+        top: 45%;
+        height: 10px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .search_document_absolute_img{
+        height: 100px;
+        width: 100px;
+        top: 1%;
+        right: 10%;
+    }
+
+    .search_component_div{
+        grid-template-areas: 
+        "A"
+        "B"
+        "C";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-right: 30px;
+    }
+
+    .search_header_component_div .search_needed_data_sign {
+        font-size: 1.8rem;
+        width: 80%;
+    }
+
+    .files_logo_div{
+        padding-top: 0px;
+    }
+
+    .searchform_inputs_div input::placeholder {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .checkboxesform_div p, .searchform_inputs_div label{
+        font-size: 1rem;
+    }
+
+    .tonality_div img, .startdate_input_div img, .enddate_input_div img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 25%;
+    }
+
+    .search_button_div button{
+        font-size: 1.2rem;
+    }
+
+    .search_button_div .field_require_sign{
+        font-size: 0.6rem;
+        margin-left: 40px;
+    }
+
+    .searchdecoration_component_div{
+        flex-direction: row-reverse;
+    }
+
+    .searchman_logo_div img{
+        height: 450px;
+        width: 450px;
+    }
+
+    .files_logo_div{
+        padding-right: 50px;
+    }
+
+    .files_logo_div img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .searchdecoration_component_div{
+        flex-direction: row-reverse;
+    }
+
+    .searchman_logo_div img{
+        height: 350px;
+        width: 350px;
+    }
+
+    .files_logo_div{
+        padding-right: 50px;
+    }
+
+    .files_logo_div img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .checkboxesform_div p, .searchform_inputs_div label{
+        font-size: 0.8rem;
+    }
+
+    .search_document_absolute_img{
+        height: 80px;
+        width: 80px;
+        top: 5%;
+        right: 10%;
+    }
+
+    .search_button_div button{
+        font-size: 1rem;
+    }
+
+    .searchform_inputs_div input::placeholder {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .tonality_div img, .startdate_input_div img, .enddate_input_div img{
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 45%;
+    }
+
+    .search_button_div .field_require_sign{
+        font-size: 0.5rem;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 637px){
+    
+    .search_document_absolute_img{
+        height: 60px;
+        width: 60px;
+        top: 10%;
+        right: 20%;
+    }
+
+    .bigger_better_sign{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .searchman_logo_div img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 545px){
+
+    .search_document_absolute_img{
+        height: 60px;
+        width: 60px;
+        top: 8%;
+        right: 5%;
+    }
+
+    .bigger_better_sign{
+        width: 90%;
+    }
+
+    .search_component_div{
+        padding-left: 30px;
+    }
+
+    .searchform_div{
+        flex-direction: column;
+    }
+
+    .files_logo_div{
+        display: none;
+    }
+
+    .searchman_logo_div img{
+        height: 350px;
+        width: 350px;
+    }
+    
+    .searchdecoration_component_div{
+        justify-content: center;
+    }
+
+    .checkboxesform_div p, .searchform_inputs_div label{
+        font-size: 1rem;
+    }
+
+    .search_button_div button{
+        font-size: 1.2rem;
+        padding: 12px 0%;
+        width: 97%;
+    }
+
+    .searchform_inputs_div input::placeholder {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .checkboxesform_div{
+        gap: 2rem;
+        padding-left: 40px;
+    }
+
+    .search_button_div .field_require_sign{
+        font-size: 0.6rem;
+        margin-left: 30px;
+        margin: 0px;
+        align-self: flex-start;
+    }
+
+    .search_button_div{
+        padding-right: 0px;
+        align-items: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .searchform_inputs_div input, .tonality_div{
+        width: 90%;
+    }
+
+    #tonality{
+        width: 100%;
+    }
+
+    .date_input_div div{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .searchform_inputs_div, .checkboxesform_div{
+        padding-left: 20px;
+    }
+
+    .checkboxesform_div p{
+        font-size: 0.9rem;
+    }
+
+    .error_input_search{
+        align-self: center;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 435px){
+    .search_document_absolute_img{
+        height: 60px;
+        width: 60px;
+        top: 7%;
+        right: 5%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 410px){
+    
+    .searchman_logo_div img{
+        height: 300px;
+        width: 300px;
+    }
+
+}

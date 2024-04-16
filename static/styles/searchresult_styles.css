@@ -1,0 +1,492 @@
+.searchresult_component_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    padding: 0px 30px 0px 60px;
+}
+
+.searchresult_header_component_div{
+    display: flex;
+    gap: 3rem;
+}
+
+.we_are_searching_sign{
+    font-family: "Ferry";
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.await_results_sign{
+    width: 50%;
+}
+
+.searchresult_header_div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 50px;
+}
+
+
+
+.searchresult_header_lady_div img{
+    height: 350px;
+    width: 650px;
+}
+
+@media screen and (max-width: 1365px) {
+    .await_results_sign{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1300px){
+    .searchresult_header_lady_div img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .searchresult_header_div{
+        padding-top: 30px;
+    }
+
+    .we_are_searching_sign{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1030px){
+    .searchresult_header_lady_div img{
+        height: 250px;
+        width: 400px;
+    }
+
+    .searchresult_header_div{
+        padding-top: 20px;
+    }
+
+    .we_are_searching_sign{
+        font-size: 1.8rem;
+    }
+
+    .await_results_sign{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 830px){
+    .searchresult_header_lady_div img{
+        height: 200px;
+        width: 300px;
+    }
+    .searchresult_header_div{
+        padding-top: 10px;
+    }
+    .we_are_searching_sign{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 740px){
+    .searchresult_header_component_div{
+        gap: 1rem;
+    }
+
+    .we_are_searching_sign{
+        font-size: 1.4rem;
+    }
+
+    .await_results_sign{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .searchresult_header_component_div{
+        flex-direction: column;
+    }
+
+    .we_are_searching_sign{
+        font-size: 2rem;
+    }
+
+    .await_results_sign{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .searchresult_header_lady_div {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .searchresult_header_lady_div img{
+        width: 400px;
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 545px){
+    .searchresult_component_div{
+        padding-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .we_are_searching_sign{
+        font-size: 1.6rem;
+    }
+
+    .searchresult_header_lady_div img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .await_results_sign{
+        font-size: 0.8rem;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .we_are_searching_sign{
+        font-size: 1.4rem;
+    }
+}
+
+/* Brief styles */
+
+.no_data_sign{
+    display: block;
+    margin: 0px auto;
+}
+
+.search_brief_component_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.brief_header_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.number_docs_founded_sign{
+    font-size: 0.9rem;
+    color: rgb(148, 148, 148);
+}
+
+.general_brief_sign{
+    font-family: "Ferry";
+    font-size: 1.8rem;
+}
+
+.brief_carousel_div{
+    display: flex;
+    width: 100%;
+}
+
+.brief_carousel_div button{
+    background-color: transparent;
+    border: none;
+}
+
+.brief_carousel_itself_div{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+
+.table_headers_carousel_div{
+    padding: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    background-color: rgb(2, 148, 145);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.inner_carousel_div{
+    position: relative;
+    user-select: none;
+    cursor: grabbing;
+    scroll-behavior: smooth;
+    width: 100%;
+    border: 2px solid rgb(2, 148, 145);
+    border-radius: 0px 10px 10px 0px;
+    overflow: visible;
+    overflow-x: scroll;
+}
+
+.inner_carousel_div::-webkit-scrollbar{
+    display: none;
+}
+
+.inner_carousel_slider_div{
+    display: flex;
+    height: 100%;
+    transition: transform 3s ease-out;
+}
+
+.brief_item_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.brief_item_data p {
+    font-size: 1rem;
+}
+
+.carousel_brief_itself{
+    padding-left: 10px;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.arrow_img_brief{
+    width: 30px;
+    height: 30px;
+}
+
+.brief_loader{
+    width: 50px;
+    height: 50px;
+}
+
+.brief_loader_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brief_item_component{
+    padding: 20px 10px;
+    padding-bottom: 15px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.gray_rectangle_brief{
+    max-height: 110px;
+    overflow: visible;
+    pointer-events: none;
+}
+
+
+.brief_items_collection_notfull_div{
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .brief_carousel_itself_div{
+        flex-direction: column;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    }
+
+    .table_headers_carousel_div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .inner_carousel_div{
+        border-radius: 0px 0px 5px 5px;
+        border: none;
+    }
+
+    .brief_item_component{
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .brief_item_component img{
+        display: none;
+    }
+
+    .brief_item_data{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .brief_item_data p, .table_headers_carousel_div p{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 440px){
+    .brief_item_data p, .table_headers_carousel_div p{
+        font-size: 0.8rem;
+    }
+}
+
+/* Doc list styles */
+
+.searchdoclist_content_component_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.show_more_doclist_button{
+    border: none;
+    background-color: rgb(89, 112, 255);
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+.searchdoclist_component{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 70px;
+}
+
+.docs_list_sign{
+    font-family: "Ferry";
+    font-size: 1.8rem;
+}
+
+
+.searchdoclist_content_div{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px,1fr));
+    row-gap: 1.5rem;
+    justify-items: center;
+}
+
+
+.searchdocitem_component{
+    padding: 10px 15px 20px 15px;
+    height: 100%;
+    width: 95%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.date_source_docs_div{
+    display: flex;
+    font-family: "InterLight";
+    gap: 0.7rem;
+    font-size: 0.8rem;
+}
+
+
+.doc_item_date_sign, .doc_item_source_sign{
+    color: rgb(148, 148, 148);
+}
+
+
+.doc_item_source_sign{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1.5px solid rgb(148, 148, 148);
+}
+
+.doc_tag_sign{
+    width: min-content;
+    white-space: nowrap;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(255, 182, 79);
+}
+
+.doc_item_img{
+    flex: 1;
+}
+
+.doc_item_img img{
+    width: 100%;
+    max-height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.docitem_text_div{
+    flex: 1;
+    font-size: 0.9rem;
+    color: rgb(148, 148, 148);
+    flex-grow: 1;
+
+}
+
+.docitem_text_div p{
+    word-break:break-word;
+}
+
+.docitem_footer_div{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.docitem_footer_div p span{
+    font-size: 0.9rem;
+    color: rgb(148, 148, 148);
+    letter-spacing: 1px;
+}
+
+.docitem_footer_div p{
+    color: rgb(148, 148, 148);
+    font-family: "InterLight";
+}
+
+.doc_item_title{
+    font-size: 1.4rem;
+}
+
+
+.doc_item_source_button{
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(124, 227, 225);
+    padding: 10px 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .searchdoclist_content_div{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+}
+
